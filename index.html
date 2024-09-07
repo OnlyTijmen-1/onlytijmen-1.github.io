@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Jar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Onze Memory Jar</h1>
+    
+    <!-- The memory jar structure -->
+    <div id="memory-jar">
+        <button onclick="showMemory()">Random :)</button>
+
+        <p>Voer een nummer in om een herinnering te selecteren:</p>
+        <input type="number" id="memory-number" min="1" max="3" placeholder="1">
+        <button onclick="selectMemory()">Selecteer Herinnering</button>
+    </div>
+    </div>
+
+    <!-- Container for displaying selected memory -->
+    <div id="memory-display">
+        <h2>Klik op de knop voor een willekeurige herinnering, of voer een nummer in</h2>
+        <h3 id="total-memories"></h3>
+        <p id="memory-text"></p>
+        <img id="memory-image" src="" alt="" style="display:none; cursor: pointer;" onclick="openFullScreen()">
+        
+
+        <div>
+            <button id="prev-btn" onclick="previousMemory()" disabled>Vorige</button>
+            <button id="next-btn" onclick="nextMemory()" disabled>Volgende</button>
+        </div>
+
+
+        
+    </div>
+
+    <script src="script.js"></script>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+</body>
+</html>
