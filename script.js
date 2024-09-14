@@ -355,7 +355,7 @@ const memories = [
     },
     {
         text: "Onze outfits voor jouw K3 Feestje",
-        img: "images/K3Feest.jpg"
+        img: "images/k3Feest.jpg"
     },
     {
         text: "Toen ik perse op de foto wilde met de mega teddybeer in praag",
