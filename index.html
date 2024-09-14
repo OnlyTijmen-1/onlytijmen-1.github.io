@@ -8,8 +8,9 @@
 </head>
 <body>
 
-    <h1>Onze Memory Jar</h1>
-    
+
+    <h1 style="font-family:Great Vibes">Onze Memory Jar</h1>
+
     <!-- The memory jar structure -->
     <div id="memory-jar">
         <button onclick="showMemory()">Random :)</button>
@@ -18,29 +19,33 @@
         <input type="number" id="memory-number" min="1" max="3" placeholder="1">
         <button onclick="selectMemory()">Selecteer Herinnering</button>
     </div>
-    </div>
 
     <!-- Container for displaying selected memory -->
     <div id="memory-display">
-        <h2>Klik op de knop voor een willekeurige herinnering, of voer een nummer in</h2>
+        <h2 style="font-family:Great Vibes">Klik op de knop voor een willekeurige herinnering, of voer een nummer in</h2>
         <h3 id="total-memories"></h3>
         <p id="memory-text"></p>
         <img id="memory-image" src="" alt="" style="display:none; cursor: pointer;" onclick="openFullScreen()">
-        
-
-        <div>
-            <button id="prev-btn" onclick="previousMemory()" disabled>Vorige</button>
-            <button id="next-btn" onclick="nextMemory()" disabled>Volgende</button>
-        </div>
-
-
-        
     </div>
 
-    <script src="script.js"></script>
+    <!-- Navigation buttons for Next and Previous (moved outside of #memory-display) -->
+    <div id="memory-controls">
+        <button id="prev-btn" onclick="previousMemory()">
+            <img src="images/hiuwu.png" alt="Previous" class="arrow rotate">
+        </button>
+        
+        <button id="next-btn" onclick="nextMemory()">
+            <img src="images/hiuwu.png" alt="Next" class="arrow">
+        </button>
+    </div>
+
+    <!-- Modal for enlarging the image -->
     <div id="imageModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="imgModal">
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
