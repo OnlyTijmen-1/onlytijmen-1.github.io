@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: #ffe6f2;
+    background-color: #f9f9f9;
 }
 
 /* Styling for the jar container */
@@ -16,33 +16,36 @@ body {
     padding: 10px 20px;
     margin: 10px;
     font-size: 16px;
-    border: 2px solid #ff9e9a;
+    border: 2px solid #007BFF;
     background-color: #ffffff;
     cursor: pointer;
 }
 
 #memory-jar button:hover {
-    background-color: #ff9e9a;
+    background-color: #007BFF;
     color: white;
 }
 
+#memory-display div {
+    margin-top: 20px; 
+}
 /* Display area for the memory */
 #memory-display {
     border: 1px solid #ccc;
     padding: 20px;
     margin-top: 20px;
-    background-color: #ffe7e6;
+    background-color: #ffffff;
 }
 
 #memory-display img {
-    border: 3px solid #ff9e9a;
+    border: 3px solid #007BFF;
     max-width: 300px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Styling for the modal */
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
@@ -53,6 +56,7 @@ body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
@@ -80,39 +84,4 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* Styling for the heart arrow buttons in memory-controls */
-#memory-controls {
-    margin-top: 20px;
-}
-
-/* Remove border for heart buttons */
-#memory-controls button {
-    background: none;
-    border: none;    /* Remove borders for heart buttons */
-    padding: 20;      /* Remove padding */
-    cursor: pointer;
-}
-
-/* Style the heart arrow images */
-.arrow {
-    width: 50px;  /* Adjust the size of the heart */
-    height: auto;
-    transition: transform 0.3s ease;  /* Smooth transition for hover */
-}
-
-/* Rotate the heart for the "Previous" button */
-.rotate {
-    transform: rotate(180deg);  /* Rotate the image 180 degrees for the previous button */
-}
-
-/* Enlarge the heart image on hover */
-.arrow:hover {
-    transform: scale(1.2);  /* Enlarge the heart slightly on hover */
-}
-
-/* Ensure the "Previous" button stays rotated when enlarged */
-.rotate:hover {
-    transform: scale(1.2) rotate(180deg);  /* Maintain rotation and enlarge */
 }
