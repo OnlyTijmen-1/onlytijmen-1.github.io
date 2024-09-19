@@ -33,7 +33,7 @@ const memories = [
     },
     {
         text: "Nieuwjaar 2024. Nieuwjaar blijft een speciaal moment, vooral om het samen met jou te vieren. Ik hoop dat we er nog veel meer samen kunnen vieren!",
-        img: "images/Nieuwjaar2024.jpg"
+        img: "images/NieuwJaar2024.jpg"
     },
     {
         text: "We hebben in Praag echt lekker ontbeten in dat tentje wat jij had gevonden, wat later heel populair bleek te zijn",
